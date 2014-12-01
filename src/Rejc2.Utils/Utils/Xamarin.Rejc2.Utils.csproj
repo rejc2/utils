@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5638130-90E6-462A-A7F3-F0BFAC8B8644}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Rejc2.Utils</RootNamespace>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AssemblyName>Xamarin.Rejc2.Utils</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>False</ConsolePause>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ArrayUtils.cs" />
+    <Compile Include="BlockArray.cs" />
+    <Compile Include="CachingDictionary.cs" />
+    <Compile Include="Character.cs" />
+    <Compile Include="ComplexF.cs" />
+    <Compile Include="DictionaryUtils.cs" />
+    <Compile Include="HybridDictionary.cs" />
+    <Compile Include="ITrie.cs" />
+    <Compile Include="ListUtils.cs" />
+    <Compile Include="Maths.cs" />
+    <Compile Include="MyBinaryReader.cs" />
+    <Compile Include="MyBinaryWriter.cs" />
+    <Compile Include="Out.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="RandomUtils.cs" />
+    <Compile Include="Set.cs" />
+    <Compile Include="SetDictionary.cs" />
+    <Compile Include="SimpleLinkedList.cs" />
+    <Compile Include="StreamUtils.cs" />
+    <Compile Include="StringUtils.cs" />
+    <Compile Include="ThreadedQueue.cs" />
+    <Compile Include="TotallingDictionary.cs" />
+    <Compile Include="Trie.cs" />
+    <Compile Include="Graphics\Colour.cs" />
+    <Compile Include="Graphics\ColourBgra32.cs" />
+    <Compile Include="Graphics\QBitmap.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\Strings.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Graphics\" />
+    <Folder Include="Properties\" />
+  </ItemGroup>
+</Project>
